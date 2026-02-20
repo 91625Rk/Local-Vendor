@@ -122,17 +122,7 @@ local-vendor-platform/
 
 ---
 
-# ⚙️ Environment Variables
 
-Create `.env` file inside `server/`
-
-```
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-```
-
----
 
 # ▶️ How to Run Project Locally
 
