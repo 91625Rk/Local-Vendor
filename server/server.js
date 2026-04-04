@@ -1,8 +1,6 @@
-import dotenv from 'dotenv';
 import app from './app.js';
-
-dotenv.config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5173;
+console.log("ENV:", process.env.MONGO_URI);
 
 app.listen(PORT,()=>{
     console.log(`Server is running at ${PORT}`);

@@ -1,4 +1,4 @@
-import Vendor from "../models/Vendor";
+import Vendor from "../models/Vendor.js";
 
 export const verifyVendor = async (req, res)=>{
     try{

@@ -1,4 +1,4 @@
-import User from '../models/User'
+import User from '../models/User.js'
 //login process
 export const login = async(req,res)=>{
     try{

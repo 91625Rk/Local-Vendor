@@ -1,5 +1,5 @@
 import express from 'express';
-import {verifyVendor} from "../controller/admin.controller"
+import {verifyVendor} from "../controller/admin.controller.js"
 
 const router = express.Router();
 

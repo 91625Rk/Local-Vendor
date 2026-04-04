@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const Vendorschema = new mongoose.schema(
+const VendorSchema = new mongoose.Schema(
     {
         name: {
             type: String,
@@ -8,7 +8,7 @@ const Vendorschema = new mongoose.schema(
         },
         category: {
             type : String,
-            enum: ['Electrician','Plumber', 'Carpenter', 'AC Repaire'],
+            enum: ['Electrician','Plumber', 'Carpenter', 'AC Repair'],
             required : true
         },
         phone: {
@@ -35,9 +35,9 @@ const Vendorschema = new mongoose.schema(
             default: 0
         }
     },
-    {timestamp: true}
+    {timestamps: true}
 );
 
-Vendorschema.index({location: '2dsphere'});
+VendorSchema.index({location: '2dsphere'});
 
-export default mongoose.model('vendor', VendorSchema);
+export default mongoose.model('Vendor', VendorSchema);

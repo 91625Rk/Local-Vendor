@@ -1,11 +1,13 @@
 import express from 'express';
 import cors from 'cors';
-import connectDB from './config/db,js';
-import vendorRoutes from './routes/vendor.routes,js'
-import adminRoutes from './routes/admin.routes'
+import dotenv from 'dotenv'
+import connectDB from './config/db.js';
+import vendorRoutes from './routes/vendor.routes.js'
+import adminRoutes from './routes/admin.routes.js'
+
 
 const app = express();
-
+dotenv.config();
 connectDB();
 
 app.use(cors());
