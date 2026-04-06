@@ -5,7 +5,7 @@
     console.log("Vendors clicked", vendor);
     return (
       <div
-      onClick={() => navigate(`/vendor/${vendor._id}`)}
+      
       className="card p-4 w-64 hover:scale-105 transition-all">
         
         <img
@@ -21,7 +21,9 @@
           <span className="text-gray-400">{vendor.distance || "2km"}</span>
         </div>
 
-        <button className="mt-4 w-full bg-purple-500 py-2 rounded-lg">
+        <button 
+        onClick={() => navigate(`/vendor/${vendor._id}`)}
+        className="mt-4 w-full bg-purple-500 py-2 rounded-lg">
           View Profile
         </button>
       </div>
